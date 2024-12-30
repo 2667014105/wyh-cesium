@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html class="no-js css-menubar" lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- 移动设备 viewport -->
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <!-- 360浏览器默认使用Webkit内核 -->
+    <meta name="renderer" content="webkit">
+    <!-- Chrome浏览器添加桌面快捷方式（安卓） -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- Safari浏览器添加到主屏幕（IOS） -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- Win8标题栏及ICON图标 -->
+    <meta name="msapplication-TileColor" content="#62a8ea">
+    <!-- 标题及搜索关键字 -->
+
+    <script type="text/javascript" src="../lib/include-lib.js"
+        include="jquery,bootstrap,admin-lte,haoutil,jquery.scrollTo,ace,lazyload" libpath="../lib/"></script>
+    <script type="text/javascript" src="/lib/Cesium/Cesium.js"></script>
+    <script type="text/javascript" src="/lib/turf/turf.min.js"></script>
+    <link href="/lib/Cesium/Widgets/widgets.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/editor.css">
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini sidebar-collapse">
+    <div class="wrapper">
+        <!-- 内容区 -->
+        <section class="content">
+            <span class="fa  fa-arrows-alt" id="showCodeBtn">&nbsp;源码</span>
+            <div class="pane" id="codePane" style="display: none">
+                <div class="codePaneTool">
+                    源代码编辑器
+                    <div class="fa fa-play-circle-o editorBtn" id="runBtn" onclick="run()">&nbsp;运行</div>
+                    <div class="fa fa-undo editorBtn" id="resetBtn" onclick="refresh()">&nbsp;重置</div>
+                </div>
+                <div id="editor">
+                </div>
+            </div>
+            <div class="col-md-12 pane" id="previewPane">
+                <iframe id='innerPage' name='innerPage'></iframe>
+            </div>
+        </section>
+    </div>
+    <script src="./nav/config.js"></script>
+    <script src="../wyh-docs/js/sidebar.js"></script>
+    <script src="../wyh-docs/js/editor.js"></script>
+</body>
+
+</html>

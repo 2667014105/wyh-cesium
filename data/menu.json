@@ -1,0 +1,45 @@
+﻿{
+    "defpage": "frame/hello.html",
+    "menu": [{
+            "name": "首页",
+            "icon": "fa fa-home",
+            "uri": "frame/hello.html"
+        },
+        {
+            "name": "基础知识",
+            "icon": "fa fa-eye",
+            "children": [{
+                    "name": "基础知识",
+                    "icon": "fa fa-folder-o",
+                    "children": [{
+                        "name": "Web前端基础知识",
+                        "uri": "frame/w3cschool/index.html"
+                    }]
+                }
+            ]
+        },
+        {
+            "name": "三维地图",
+            "icon": "fa fa-leaf",
+            "children": [
+                {
+                    "name": "wyhCesiumDemo",
+                    "icon": "fa fa-laptop",
+                    "children": [
+                        {
+                            "name": "Example示例",
+                            "uri": "wyh-docs/examples.html"
+                        }
+                    ]
+                }
+
+            ]
+        },
+        {
+            "name": "关于",
+            "icon": "fa fa-cloud",
+            "uri": "frame/about.html"
+        }
+    ]
+
+}

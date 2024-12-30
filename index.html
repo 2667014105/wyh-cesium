@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,user-scalable=0,minimum-scale=1.0,maximum-scale=1.0" />
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="x5-fullscreen" content="true">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <link rel='icon' href='./frame/images/favicon.ico'  id="mylink"/>
+    <title></title>
+
+    <!-- css -->
+    <link href='./lib/fonts/font-awesome/css/font-awesome.min.css' type='text/css' rel='stylesheet' />
+    <link href="./lib/layer/theme/default/layer.css" rel="stylesheet" />
+    <link href='./frame/css/index.css' type='text/css' rel='stylesheet' />
+</head>
+
+<body>
+    <!--导航及主菜单-->
+    <div class='mainHeader'>
+        <div class='loading active' id='navLoadEle'>正在加载菜单...</div>
+
+        <div class='logo'>
+            <p><img src="./frame/images/logo.png" id="logo" /><span id="title"></span></p>
+        </div>
+
+
+        <div class='mediaNav fa fa-navicon' id='mediaNav'></div>
+        <ul class='nav' id='navList'>
+            <!-- <li><a href='#'><span></span>地区情况1</a></li>
+            <li><a href='#'><span></span>地区情况2</a></li>
+            <li><a href='#'><span></span>地区情况3</a></li>
+            <li><a href='#'><span></span>地区情况4</a></li> -->
+        </ul>
+
+        <!--鼠标移入菜单效果线-->
+        <div class='positionMarker' id='positionMarker'></div>
+    </div>
+
+    <!--二、三级菜单-->
+    <div id='menu' class='menu'>
+        <!-- class='active' -->
+        <!-- <dl>
+            <dt>二级栏目1</dt>
+            <dd><a href='#'>三级栏目1</a></dd>
+            <dd><a href='#'>三级栏目2</a></dd>
+            <dd><a href='#'>三级栏目3</a></dd>
+        </dl>
+        <dl>
+            <dt>二级栏目2</dt>
+            <dd><a href='#'>三级栏目1</a></dd>
+            <dd><a href='#'>三级栏目2</a></dd>
+            <dd><a href='#'>三级栏目3</a></dd>
+        </dl> -->
+    </div>
+
+
+    <div class='mainCan' id='mainCan'>
+        <div class='loading' id='conLoadEle'>正在加载功能...</div>
+        <!-- 菜单对应页面功能加载区 -->
+        <div class='mainCon' id='mainCon'>
+            <iframe id="rightFrame" name="rightFrame" style="width:100%;height:100%;margin:0;" scrolling="auto"
+                frameborder="0" src="frame/hello.html"></iframe>
+        </div>
+    </div>
+
+    <!--js-->
+    <script src="./lib/jquery/jquery-2.1.4.min.js"></script>
+    <script src="./lib/layer/layer.js"></script>
+    <script src="./lib/hao/haoutil.js"></script>
+    <script type="text/javascript" src="./config/config.js"></script>
+    <script src="./frame/js/index.js"></script>
+    <script type="text/javascript">
+        const myLink = document.querySelector("#mylink");
+        if(!window.commonConfig.useTitle){
+            document.title = '';
+            $('#title').remove();
+            $('#logo').remove();
+            $('meta[name="keywords"]').remove();
+            $('meta[name="description"]').remove();
+            myLink.href=''
+        }else{
+            document.title = window.commonConfig.docTitle;
+            $('#title').html(window.commonConfig.title);
+            $('#logo').show();
+            myLink.href='./frame/images/favicon.ico'
+        }
+
+    </script>
+</body>
+
+</html>

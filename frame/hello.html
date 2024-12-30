@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,user-scalable=0,minimum-scale=1.0,maximum-scale=1.0" />
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="x5-fullscreen" content="true">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <link rel='icon' href='./frame/images/favicon.ico' />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <script type="text/javascript" src="../lib/include-lib.js" include="jquery,highlight" libpath="../lib/"></script>
+    <script type="text/javascript" src="../config/config.js"></script>
+
+    <script src="js/globe.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+        })
+    </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h3 id="leaflet">欢迎访问wyhCesium的demo实例网站<span id="site"></span></h3>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+    </div>
+
+
+    <!--footer-->
+    <div class="icl-docs-footer">
+        <div class="container">
+            <div class="icl-docs-copyright" id="icl-docs-footer">
+                版权所有 wyh
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        if(window.commonConfig.useTitle){
+            $('#site').html(window.commonConfig.title);
+            $('.blank').html(window.commonConfig.company)
+        }else{
+            $('#site').remove();
+            $('.blank').remove();
+        }
+    </script>
+</body>
+
+</html>

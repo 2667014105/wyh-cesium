@@ -1,0 +1,188 @@
+@charset "utf-8";
+.project-sq{
+	margin: 20px;
+	padding: 20px 15px;
+	border: 1px solid #e1e1e1;
+	background-color: hsla(0,0%,71%,.1);
+	border-radius: 4px;
+}
+.project-sq-avatar{
+	margin-bottom: 15px;
+	text-align: center;
+}
+.project-sq-avatar li{
+	display: inline-block;
+	margin-right:15px; 
+	margin-bottom:5px;
+}
+.project-sq-avatar a{
+	width: 50px;
+	height: 50px;
+	display: block;
+	margin-bottom: 5px;
+}
+.project-sq-avatar img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.project-sq-avatar span{
+	color: #999;
+}
+.project-sq-btnarea{
+	text-align: center;
+}
+.project-sq-btnarea a{
+	border:1px solid #ae4141;
+	width: 20px;
+	padding: 8px 25px;
+	background-color: #ae4141;
+	color: #fff;
+	border-radius: 4px;
+	font-size: 16px;
+}
+.project-sq-info{
+	color: #999;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.pay-tip-price{
+	text-align: center;
+	height: 50px;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+}
+.pay-tip-price-first{
+	margin-top: 40px;
+}
+.pay-tip-btn{
+	border:1px solid #ae4141;
+	width: 20px;
+	padding: 8px 25px;
+	border-radius: 4px;
+	font-size: 16px;
+	margin-left: 15px;
+	background-color: #fff;
+	color: #ae4141;
+}
+.pay-tip-btn-un{
+	
+}
+.pay-tip-btn-ck{
+	background-color: #ae4141;
+	color: #fff;
+}
+.pay-tip-btn:hover{
+	background-color: #ae4141;
+	color: #fff;
+}
+.tip-sel{
+	background-color: #ae4141;
+	color: #fff;
+}
+.pay-tip-Box{
+	background-color:rgba(0, 0, 0, 0.8);
+    height:100%;
+    left:0;
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:1200;
+}
+.pay-tip-content{
+	background-color: #fff;
+    border-radius: 10px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    top: 10%;
+    width: 600px;
+    z-index: 1200;
+    height: 400px;
+}
+.pay-tip-top{
+	background-color: #f3f3f3;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 10px 20px;
+}
+.pay-tip-title{
+	font-size: 16px;
+    font-weight: bold;
+}
+.pay-tip-close{
+	color: #9e9e9e;
+    cursor: pointer;
+    float: right;
+    font-weight: 700;
+    height: 20px;
+    text-align: center;
+    text-shadow: 0 1px 0 #fff;
+    width: 20px;
+}
+.pay-tip-paytype{
+	margin-bottom: 20px;
+	text-align: center;
+	height: 30px;
+	font-size: 16px;
+}
+.pay-tip-paytype span{
+	vertical-align: middle;
+	margin-right: 12px;
+}
+.pay-tip-paytype img{
+	height: 30px;
+	margin-right:12px;
+	vertical-align: middle;
+}
+.pay-tip-gopay{
+	text-align: center;
+	margin-top: 50px;
+}
+.pay-tip-gopay a{
+	border:1px solid #ae4141;
+	padding: 10px 90px;
+	background-color: #ae4141;
+	color: #fff;
+	border-radius: 4px;
+	font-size: 17px;
+}
+.pay-tip-gray{
+	-webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+}
+.pay-fbi-waring{
+	text-align: center;
+	color: red;
+}
+.pay-tip-result{
+	margin-top: 45px;
+	padding: 0 30px;
+}
+.pay-tip-result a{
+	border:1px solid #ae4141;
+	padding: 10px 75px;
+	background-color: #ae4141;
+	color: #fff;
+	border-radius: 4px;
+	font-size: 17px;
+	margin-right: 20px;
+}
+.pay-tip-result-title{
+	border-bottom:1px solid #9e9e9e;
+	padding-bottom:8px;
+	font-size:28px;
+}
+.pay-tip-result-waring{
+	margin-top:13px;
+	font-size:14px;
+}
+.pay-tip-result-btn{
+	margin-top:50px;
+	text-align:center;
+}

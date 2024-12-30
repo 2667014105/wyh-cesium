@@ -1,0 +1,40 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+html,body, .wrapper, .content{
+  height: 100%;
+  padding: 0;
+  border: none;
+  margin: 0;
+  overflow: hidden;
+}
+.content{
+  display: flex;
+}
+.pane{
+  flex: 1;
+}
+.codePaneTool{
+  padding: 0 30px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn-box{
+  display: flex;
+}
+.btn-box div{
+  cursor: pointer;
+  margin: 0 10px;
+
+}
+.editor{
+  height: calc(100% - 40px);
+}
+.innerPage{
+  height: 100%;
+  width: 100%;
+  border: none;
+}

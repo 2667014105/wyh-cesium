@@ -1,0 +1,297 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>HTML DOM教程_w3cschool</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="keywords" content="HTML DOM教程" />
+    <link rel="stylesheet" href="../statics/css/w3.css?v=1.21" />
+    <link rel="stylesheet" href="../statics/css/project.css?v=1.21" />
+    <link rel="shortcut icon" href="../statics/images/favicon.ico" />
+    <link href="../statics/plugins/highlight/styles/default.css" rel="stylesheet" type="text/css" />
+    <script src="../statics/plugins/highlight/highlight.pack.js" type="text/javascript"></script>
+    <script src="../statics/plugins/jquery-2.1.4.min.js" type="text/javascript"></script>
+    <script src="../statics/plugins/jquery.cookie.min.js" type="text/javascript"></script>
+</head>
+<body id="homefirst">
+
+
+    <div id="wrapper" class="project-wrapper">
+
+        <p style="margin: 0px 15px 15px 15px;">
+            <a href="../index.html">&larr; 返回列表</a>
+        </p>
+        <div id="pro-mian" class="main-container">
+            <div class="project-cover">
+                <div id="pcover">
+                    <div class="portlet">
+                        <div class="coverimg">
+                            <a href="../htmldom" title="HTML DOM教程">
+                                <img class="pimgcover" src="../statics/img/cover_htmldom.jpeg" width="150" height="150" alt="HTML DOM教程" />
+                            </a>
+                        </div>
+                        <div class="coverinfo">
+                            <h1>HTML DOM教程</h1>
+                            <div class="coverinfo-desc">
+                                <h2>手册简介:</h2>
+                                <p>
+                                    HTML DOM 定义了访问和操作 HTML 文档的标准方法。
+                                    DOM 以树结构表达 HTML 文档。
+                                </p>
+                                <div class="content-group">
+                                    <a href="http://www.w3cschool.cn/htmldom/" target="_blank">
+                                        <i class="newversion-icon"></i><span style="font-size:16px;color:#0026ff">阅读在线教程</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-desc content-intro">
+                        <h2 class="project-desc-title"><i class="icon-reorder"></i>手册说明:</h2>
+                        <div class="project-desc-content">
+                            <p><b>认识HTML DOM：</b></p><p>DOM是Document Object Model文档对象模型的缩写，是W3C组织推荐的处理可扩展标志语言的标准编程接口。根据W3C DOM规范，DOM是一种与浏览器，平台，语言无关的接口，使得你可以访问页面中其他的标准组件。简单理解，DOM解决了Netscape的JavaScript和 Microsoft的JavaScript之间的冲突，给予web设计师和开发者一个标准的方法，让他们来访问他们站点中的数据、脚本和表现层对象。</p><p><br></p><div style="text-align: center;"><img src="../statics/img/1477639565278367.png" alt=""></div><p><br></p><p>DOM是以层次结构组织的节点或信息片断的集合。这个层次结构允许开发人员在树中导航寻找特定信息。分析该结构通常需要加载整个文档和构造层次结构，然后才能做任何工作。由于它是基于信息层次的，因而 DOM 被认为是基于树或基于对象的。</p><p>HTML DOM 定义了访问和操作HTML文档的标准方法。</p><p>HTML DOM 把 HTML 文档呈现为带有元素、属性和文本的树结构（节点树）。</p>
+                            <p><br></p><p><b>HTML DOM的发展及学习前的准备：</b></p><p>Document Object Model的历史可以追溯至1990年代后期微软与Netscape的“浏览器大战”，双方为在JavaScript与JScript一决生死，于是大规模的赋予浏览器强大的功能。微软在网页技术上加入了不少专属事物，计有VBScript、ActiveX、以及微软自家的DHTML格式等，使不少网页使用非微软平台及浏览器无法正常显示。DOM即是当时蕴酿出来的杰作。</p><p><br></p><p>在 1998 年，W3C 发布了第一级的 DOM 规范。这个规范允许访问和操作 HTML 页面中的每一个单独的元素。所有的浏览器都执行了这个标准，因此，DOM 的兼容性问题也几乎难觅踪影了。</p><p><br></p><p>在您开始学习HTML DOM之前，您应该对以下知识有基本的了解：</p><p>《<a href="../html" target="_blank">HTML 教程</a>》</p><p>《<a href="../javascript" target="_blank">JavaScript 教程</a>》</p><p>《<a href="../css" target="_blank">CSS 教程</a>》</p><p>在本教程中，你将学习如何通过文档对象模型（DOM）更有效率地操作HTML，而无需DOM操作库的帮助。教程中的代码示例，用演示多种节点对象的工作方式，带你领略现代DOM理念。</p><p><br></p><p><strong>HTML DOM的优缺点：</strong><br></p><p>优点：</p><p>易用性强，使用DOM时，将把所有的XML文档信息都存于内存中，并且遍历简单，支持XPath，增强了易用性。</p><p><br></p><p>缺点：</p><p>效率低，解析速度慢，内存占用量过高，对于大文件来说几乎不可能使用。另外效率低还表现在大量的消耗时间，因为使用DOM进行解析时，将为文档的每个element、attribute、processing-instrUCtion和comment都创建一个对象，这样在DOM机制中所运用的大量对象的创建和销毁无疑会影响其效率。</p><p><br></p><p><strong>相关网址：</strong><br></p><p>HTML DOM 参考手册：<a href="http://www.w3cschool.cn/jsref/jsref-tutorial.html" target="_blank">http://www.w3cschool.cn/jsref/jsref-tutorial.html</a></p><p>W3C 中文网：<a href="http://www.chinaw3c.org/" target="_blank">http://www.chinaw3c.org/</a></p><p>W3C 官网：<a href="https://www.w3.org/" target="_blank">https://www.w3.org/</a></p><p><strong><br></strong></p> 
+                        </div>
+                    </div>
+
+                </div>
+                <script type="text/javascript">
+                    function isProjectLike() {
+                        $.ajaxdo({
+                            url: "/project/islike/htmldom.html",
+                            type: "post",
+                            dataType: 'json',
+                            data: {},
+                            sync: false,
+                            success: function (data) {
+                                if (data.statusCode == 200) {
+                                    $('.avatar-list').find('p').remove();
+                                    $('.avatar-list').append('<a href="/u/' + data.data + '" title="' + data.data + '"><img src="/attachments/avatar/avatar_' + data.data + '.jpg" title=""></a>');
+                                    var likecount = $("#likecount").text() * 1 + 1;
+                                    $("#likecount").html(likecount);
+                                    $(".btn-thumbs-up i").attr('class', 'thumbs-up-icon-isdone');
+                                    $("#likestatus").html('已赞');
+                                    toastr.success(data.message, '', { "positionClass": "toast-top-center" });
+                                } else {
+                                    toastr.warning(data.message, '', { "positionClass": "toast-top-center" });
+                                }
+                            }
+                        });
+                    }
+
+                    function isProjectStar() {
+                        var type = $('#hbstar').attr('data-type');
+                        $.ajaxdo({
+                            url: "/project/star/htmldom.html",
+                            type: "post",
+                            dataType: 'json',
+                            data: {},
+                            success: function (data) {
+                                if (data.statusCode == 200) {
+                                    if (type == 'star') {
+                                        $('#hbstar').html('<i class="star-icon-isdone"></i><span>已收藏</span>');
+                                        $('#hbstar').attr('data-type', 'rstar');
+                                        toastr.success(data.message, '', { "positionClass": "toast-top-center" });
+                                    } else {
+                                        $('#hbstar').html('<i class="star-icon"></i><span>收藏</span>');
+                                        $('#hbstar').attr('data-type', 'star');
+                                        toastr.success(data.message, '', { "positionClass": "toast-top-center" });
+                                    }
+                                } else {
+                                    toastr.warning(data.message, '', { "positionClass": "toast-top-center" });
+                                }
+                            }
+                        });
+                    }
+                </script>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../statics/plugins/ueditor/third-party/SyntaxHighlighter/shCore.js" type="text/javascript"></script>
+    <script src="../statics/js/commonfooter.js" type="text/javascript"></script>
+    <script src="../statics/js/collection.js" type="text/javascript"></script>
+    <script src="../statics/core/ajaxdo.core.js" type="text/javascript"></script>
+    <script src="../statics/js/paypraise.js" type="text/javascript"></script>
+    <script>
+        var kn = {
+            ismenu: '',
+            pename: 'htmldom',
+            kename: '',
+        };
+        $(function () {
+
+            $(".onlinenote").show();
+
+            var kename = kn.kename;
+            var fid = "";
+            var uid = '0';
+            // SyntaxHighlighter.config.clipboardSwf = '/plugins/ueditor/third-party/zeroclipboard/ZeroClipboard.swf';
+            // SyntaxHighlighter.all();//代码高亮
+            /*开启计时 准备记录积分*/
+            var vcreditfull = $.cookie('ypre_vcreditfull');
+            //console.log(vcreditfull);
+            if (vcreditfull == undefined && uid != '0' && uid != '') {
+                setTimeout(function () {
+                    $.ajax({
+                        url: "/project/setViewCredit",
+                        type: "post",
+                        data: { kename: kename },
+                        dataType: "json",
+                        success: function (msg) {
+                            var statusCode = {
+                                '200': 'success',
+                                '400': 'warning',
+                            };
+                            var toastrType = statusCode[msg.statusCode];
+                            if (msg.statusCode == 300 || msg.statusCode == 400) {
+                                return;
+                            }
+                            toastr[toastrType](msg.message);
+                        }
+                    });
+                }, 30000);
+            }
+            hljs.initHighlightingOnLoad();//高亮代码
+            // // 上一篇 下一篇
+            // if(fid == "-1"){
+            // $(".prenext").parent().remove();
+            // }else{
+            var el = $(".dd-item[data-id=" + kename + "]");
+            // var prevel = el.prev();
+            // var nextel = el.next();
+            //  var prev = prevel.find('a')[0];
+            //  var next = nextel.find('a')[0];
+            //  if(prev == undefined){
+            //     prev = el.parents(".dd-list").prev().find('a')[0];
+            //  }
+            //  if(next == undefined){
+            //     next = el.parents(".dd-item").next().find('a')[0];
+            //  }
+            //  if(prevel.attr("ismenu") == 1){
+            //  prev = prevel.find
+            //  }
+            //  if($(prev).length < 1){
+            //    $(".previous-link").hide();
+            //  }else{
+            //    //$(prev).clone().appendTo(".previous-link");
+            //    $(".previous-link > a").attr("href",$(prev).attr("href")).attr("title",$(prev).attr("title"));
+            //    $(".previous-link").show();
+            //  }
+            //  if($(next).length < 1){
+            //    $(".next-link").hide();
+            //  }else{
+            //    $('.next-link > a').attr("href",$(next).attr("href")).attr("title",$(next).attr("title"));
+            //    $(".next-link").show();
+            //  }
+            // }
+            //当文章为文件夹的时候 并且内容为空的时候显示文件夹内部文章列表
+            if ($(".view-box").html() == "" && kn.ismenu == 1) {
+                $(el).clone().appendTo(".view-box");
+                $(".view-box").find(".dd-content").removeClass("folder-open").removeClass("folder-close").css({ "background-color": "#fff" });
+            }
+            // $(".dd-content[class*=folder-]").click(function(){
+            //     var obj = $(this);
+            //     if(obj.hasClass("folder-open")){
+            //         obj.removeClass("folder-open");
+            //         obj.addClass("folder-close");
+            //         obj.next().hide();
+            //     }else{
+            //         obj.removeClass("folder-close");
+            //         obj.addClass("folder-open");
+            //         obj.next().show();
+            //     }
+            // });
+        });
+
+
+        function getviewkn() {
+            var usernamestr = '';
+            $.ajax({
+                url: "/my/knowledge/getViewkn?pename=" + kn.pename,
+                dataType: "json",
+                success: function (msg) {
+                    var objli, objtt;
+                    for (var p in msg) {
+                        objli = $("#nestable_handbook").find(".dd-item[data-id='" + msg[p]['kename'] + "']");
+                        if (objli.attr("ismenu") != 1) {
+                            objli.addClass("readed").find("a").attr("title", "上次浏览时间:(" + msg[p]['lasttime'] + ")");
+                        }
+                    }
+                }
+            });
+
+        }
+
+        // 新|旧版预览 切换
+        function newversion() {
+
+            var isNewVersion = $.cookie("newversion");
+            if (isNewVersion == 1) {
+                $.cookie("newversion", 0, { path: '/' });
+            } else {
+                $.cookie("newversion", 1, { path: '/' });
+            }
+
+            window.location.reload();
+
+        }
+
+        function islike() {
+            $.ajaxdo({
+                url: "/project/islikeKn",
+                type: "post",
+                dataType: 'json',
+                data: { "pename": '', "kename": '' },
+                sync: false,
+                success: function (data) {
+                    if (data.statusCode == 200) {
+                        $('.avatar-list').find('p').remove();
+                        $('.avatar-list').append('<a href="/u/' + data.data + '" title="' + data.data + '"><img src="/attachments/avatar/avatar_' + data.data + '.jpg" title=""></a>');
+                        var likecount = $("#likecount").text() * 1 + 1;
+                        $("#likecount").html(likecount);
+                        $(".btn-thumbs-up i").attr('class', 'thumbs-up-icon-isdone');
+                        $("#likestatus").html('已赞');
+                        toastr.success(data.message, '', { "positionClass": "toast-top-center" });
+                    } else {
+                        toastr.warning(data.message, '', { "positionClass": "toast-top-center" });
+                    }
+                }
+            });
+        }
+
+        function isstar() {
+            var type = $('#hbstar').attr('data-type');
+            $.ajaxdo({
+                url: "/project/tempStar",
+                type: "post",
+                dataType: 'json',
+                data: {
+                    kename: '',
+                    pename: '',
+                    ktype: '',
+                },
+                success: function (data) {
+                    if (data.statusCode == 200) {
+                        if (type == 'star') {
+                            $('#hbstar').html('<i class="star-icon-isdone"></i><span>已收藏</span>');
+                            $('#hbstar').attr('data-type', 'rstar');
+                            toastr.success(data.message, '', { "positionClass": "toast-top-center" });
+                        } else {
+                            $('#hbstar').html('<i class="star-icon"></i><span>收藏</span>');
+                            $('#hbstar').attr('data-type', 'star');
+                            toastr.success(data.message, '', { "positionClass": "toast-top-center" });
+                        }
+                    } else {
+                        toastr.warning(data.message, '', { "positionClass": "toast-top-center" });
+                    }
+                }
+            });
+        }
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": "", "bdMini": "2", "bdMiniList": false, "bdPic": "", "bdStyle": "2", "bdSize": "16" }, "share": {} }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = '//bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

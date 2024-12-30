@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html class="no-js css-menubar" lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- 移动设备 viewport -->
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <!-- 360浏览器默认使用Webkit内核 -->
+    <meta name="renderer" content="webkit">
+    <!-- Chrome浏览器添加桌面快捷方式（安卓） -->
+    <link rel="icon" type="image/png" href="img/favicon/favicon.png">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- Safari浏览器添加到主屏幕（IOS） -->
+    <link rel="icon" sizes="192x192" href="img/favicon/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- Win8标题栏及ICON图标 -->
+    <link rel="apple-touch-icon-precomposed" href="img/favicon/apple-touch-icon.png">
+    <meta name="msapplication-TileImage" content="img/favicon/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#62a8ea">
+
+    <!-- 标题及搜索关键字 -->
+    <script type="text/javascript" src="../config/config.js"></script>
+
+
+    <script type="text/javascript" src="../lib/include-lib.js?time=20200102"
+        include="jquery,bootstrap,admin-lte,jquery.scrollTo,lazyload" libpath="../lib/"></script>
+
+    <link rel="stylesheet" href="css/common.css?time=20200102">
+    <!--<link rel="stylesheet" href="css/header.css?time=20200102">-->
+    <link rel="stylesheet" href="css/sideBar.css?time=20200102">
+    <link rel="stylesheet" href="css/examples.css?time=20200102">
+    <style>
+        /*无头部菜单时*/
+        .noHeader .main-sidebar,
+        .left-side {
+            padding-top: 0px;
+        }
+
+        .noHeader .category {
+            padding-top: 0px;
+        }
+    </style>
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini noHeader" data-spy="scroll" data-target="#scrollSpy">
+
+    <div class="wrapper">
+        <!--顶部导航-->
+        <!--<header class="header-wrapper main-header"></header>
+        <script>
+            var identification = { name: "示例" };
+            $('.main-header').load('section/header.html?time=20200102');
+        </script>-->
+
+        <!-- 侧边栏 -->
+        <aside class="sidebar-wrapper main-sidebar" id="scrollSpy">
+            <!-- sidebar: style can be found in sidebar.less -->
+            <section class="sidebar" id="sidebar">
+                <!-- sidebar menu: : style can be found in sidebar.less -->
+                <ul class=" sidebar-menu nav  nav-stacked " id="sidebar-menu"></ul>
+            </section>
+            <!-- /.sidebar -->
+        </aside>
+        <!-- 内容区 -->
+        <div class="content-wrapper examples-container" id="main">
+            <ul id="charts-list">
+            </ul>
+        </div>
+        <!-- footer -->
+        <footer class="main-footer">
+            <div class="icl-docs-copyright" id="icl-docs-footer">
+                版权所有 wyh</a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+    </script>
+    <script src="../wyh-example/nav/config.js?time=20200102"></script>
+    <script src="js/sidebar.js?time=20200102"></script>
+    <script src="js/example.js?time=20200102"></script>
+
+</body>
+
+</html>

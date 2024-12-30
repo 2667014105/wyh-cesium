@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,user-scalable=0,minimum-scale=1.0,maximum-scale=1.0" />
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="x5-fullscreen" content="true">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <script type="text/javascript" src="../config/config.js"></script>
+
+    <script type="text/javascript" src="../lib/include-lib.js" include="jquery,highlight" libpath="../lib/"></script>
+
+    <script src="js/globe.js"></script>
+    <script type="text/javascript">
+        var viewer;
+        $(document).ready(function () {
+
+            //设置语法高亮
+            $('pre code').each(function (i, block) {
+                hljs.highlightBlock(block);
+            });
+
+
+        })
+    </script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>什么是全景漫游</h2>
+        <p>三维全景漫游是指在由全景图像构建的全景空间里进行切换，达到浏览各个不同场景的目的。全景漫游技术可以让体验者在全景图像构建的全景空间里切换视角的浏览。它是通过拍摄全景图像，再采用计算机图形图像技术构建出全景空间，让使用者能用控制浏览的方向，或左或右、或上或下观看物体或场景，仿佛身临其境一般。与传统的3D建模相比，全景漫游技术制作简单，数据量小，系统消耗低，且更有真实感。故近年来，也是VR技术的一大热门实现手法。而在移动端的全景漫游，更是可以绑定陀螺仪，让你更有身临其境的感觉。
+        </p>
+
+
+        <h2>什么是全景图</h2>
+        <p>
+            要制作全景漫游，首先得有全景图像
+            （这里特指<strong>球面全景图</strong>）。全景图像的获取通常是借助鱼眼的全景摄像机的拍摄来完成的，或者是单反相机、鱼眼镜头、全景云台和三角架的组合。需要按照一个方向旋转360度拍摄一组照片，照片之间要有部分重合的部分，方便进行后期的拼接和融合。在拍好照片后需要将它们无缝拼接在一起，生成的全景图像可分为球面全景图、立方体全景图以及柱状全景图等。
+            全景图图片<strong>宽高比</strong>为<strong><span
+                    style="color: #ff0000;">2比1</span></strong>的包含了360°x180°空间的图片，例如8000*4000的jpg图片或tiff图片等。
+            全景图大概就是下面的样子。
+        </p>
+        <p style="text-align: center;">
+            <img src="images/pano.png" alt="pano_01" width="648" height="323" sizes="(max-width: 648px) 100vw, 648px"
+                class=" size-large wp-image-40 aligncenter secureimg_wp">
+        </p>
+        <p>这张图片没有补地，可以看到最下面三脚架的部分。图片宽度是高度的2倍，因为宽度对应的是水平方向的360度，高度对应的是垂直方向的180度。这种全景图就是<strong>球形全景图</strong>，是我们最常见的全景图类型。通常一个标准的球形全景图是包含360×180的范围。也就是水平360度，垂直180度。有些人搞不懂，认为是360*360。这么比喻吧。我们拿着一个巨大的扇子，这是一个半圆形的扇子，上至天，下只地。扇面垂直于地面，它包含了你前方的垂直的180度。也就是水平点以上90度，水平点以下90度。然后你拿着这把巨大的扇子转一圈，360度，那就是全景了。因此是360×180。至于什么3D、4D、720之类，我自己是没有办法给出准确的概念。
+        </p>
+        <p>&nbsp;</p>
+
+
+        <h2>krpano简介</h2>
+        <p>krpano是一款全景漫游制作软件和工具。它具有以下特点：</p>
+        <ul>
+            <li>高度灵活、性能卓越的轻量化全景漫游浏览器。</li>
+            <li>兼容HTML5和Flash，支持Webgl下的WebVR展示。</li>
+            <li>使用专用的krpano xml代码编写全景漫游，可开发出高度定制化的项目，也可利用krpano工具开发在线全景制作及展示平台。</li>
+            <li>支持各类型的全景图以及全景视频和环物全景。</li>
+            <li>支持各种投影模式。</li>
+            <li>同时提供简单高效的批处理方式，可在无需代码干预下迅速生成一个基本功能兼备的全景漫游项目。</li>
+        </ul>
+        <div class="pp-embed" style="position:relative;">
+            <iframe src="../krpano/index.html?data=road" marginheight="0" marginwidth="0" frameborder="0" scrolling="no"
+                style="display: block; width: 100%; height: 480px;" allowfullscreen="true" mozallowfullscreen="true"
+                webkitallowfullscreen="true" class="pp-embed-content"></iframe>
+
+        </div>
+        <p>&nbsp;</p>
+
+        <p><strong>哪些朋友需要学习和了解krpano？</strong></p>
+        <ul>
+            <li>需要开发诸如<strong>得图云、airpano、720云、动景网、全景客、ivrpano、全景旅行者、光鱼全景</strong>、<strong>全景云、720think等</strong>全景展示平台的前后端程序员。
+            </li>
+            <li>需要设计独一无二的高度定制的全景漫游的朋友（通常是因为客户有这个需求）。</li>
+            <li>单纯地想了解krpano的。</li>
+        </ul>
+
+        <p><strong>哪些朋友其实不需要使用和学习krpano？</strong></p>
+        <ul>
+            <li>只需要单纯的展示全景的，完全可以利用全景平台制作。</li>
+            <li>认为自身缺乏信心和耐心来接触krpano代码的。</li>
+        </ul>
+
+
+
+
+    </div>
+    <!--footer-->
+    <div class="icl-docs-footer">
+        <div class="container">
+            <div class="icl-docs-copyright" id="icl-docs-footer">
+                版权所有wyh
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #earth{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+    <script src="/lib/jquery/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="/lib/Cesium/Cesium.js"></script>
+    <script type="text/javascript" src="/lib/turf/turf.min.js"></script>
+    <link href="/lib/Cesium/Widgets/widgets.css" rel="stylesheet">
+    <script src="/lib/wangEarth/wyh.cjs.js"></script>
+</head>
+<body>
+<div id="earth"></div>
+<script type="module">
+
+    $(document).ready(function () {
+        initEarth();
+        window.Cesium = Cesium
+    });
+
+    function initEarth(){
+        new WangEarth('earth')
+    }
+
+</script>
+
+</body>
+</html>
